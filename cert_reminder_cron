@@ -1,0 +1,12 @@
+#!/bin/bash
+# 
+# copy cert_reminder.sh /usr/local/sbin/certbot/
+# 	create cert_reminder.env in /usr/local/sbin/certbot/ and setup variables
+#       chmod u+x these files
+#
+# copy this file to /etc/cron.daily
+# 	chmod ugo+x this file
+#
+test -x /usr/local/sbin/certbot/cert_reminder.sh || exit 0
+
+/usr/local/sbin/certbot/cert_reminder.sh 

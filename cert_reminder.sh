@@ -11,7 +11,7 @@ SERVER_NAME="<servername.example.com>"
 # healthchecks.io url
 HEALTHCHECKS_URL="<https://hc-ping.com/guid>"
 
-source cert_reminder.env
+source /usr/local/sbin/certbot/cert_reminder.env
 
 # Function to check expiration date
 check_cert_expiry() 

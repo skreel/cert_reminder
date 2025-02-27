@@ -9,4 +9,4 @@
 #
 test -x /usr/local/sbin/certbot/cert_reminder.sh || exit 0
 
-/usr/local/sbin/certbot/cert_reminder.sh /dev/null 2>&1
+/usr/local/sbin/certbot/cert_reminder.sh > /dev/null 2>&1
